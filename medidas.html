@@ -30,13 +30,36 @@
 			<input ng-model="medida.abdominal" type="text" id="abdominal" />
 			<button ng-click="add(medida)">add</button>
 		</div>
+		<h2>{{gorduraSobra}} %   O percentual de gordura está Acima ou Abaixo do ideal</h2>
+
+		<div>
+			<h1>Indices de Peso e Gordura</h2>
+			<chart value="myChartBarTotal" type="Bar" width="800"></chart>
+		</div>
 		
 		<div>
+			<h2>Peso</h2>
 			<chart value="myChart" type="Line"></chart>
 		</div>
 
 		<div>
+			<h2>Percentual de Gordura</h2>
 			<chart value="myChartPie" type="Pie"></chart>
+		</div>
+
+		<div>
+			<h2>Ideal de Gordura</h2>
+			<chart value="myChartBar" type="Bar"></chart>
+		</div>
+
+		<div>
+			<h2>Peso Gordura</h2>
+			<chart value="myChartBarPesoGordura" type="Bar"></chart>
+		</div>
+
+		<div>
+			<h2>Peso Ideal</h2>
+			<chart value="myChartBarPesoIdeal" type="Bar"></chart>
 		</div>
 
 	</body>
