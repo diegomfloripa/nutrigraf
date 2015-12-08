@@ -1,0 +1,43 @@
+<html ng-app="nutriGraf">
+	<head>
+		<script src="libs/angular/angular.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controller/medidasCtrl.js"></script>
+		<script src="js/chartjs-directive.js"></script>
+		<script src="js/Chart.js"></script>
+
+		
+		<title>Medidas</title>
+	</head>
+
+	<body ng-controller="medidasCtrl">
+		
+		<div>
+			<h2>Faulkner</h2>
+			<label for="peso">Peso</label>
+			<input ng-model="medida.peso" type="text" id="peso" />
+			<label for="altura">Altura</label>
+			<input ng-model="medida.altura" type="text" id="altura" />
+			<label for="idade">Idade</label>
+			<input ng-model="medida.idade" type="text" id="idade" />
+			<label for="triceps">Tríceps</label>
+			<input ng-model="medida.triceps" type="text" id="triceps" />
+			<label for="escapular">Escapular</label>
+			<input ng-model="medida.escapular" type="text" id="escapular" />
+			<label for="suprailiaca">Suprailíaca</label>
+			<input ng-model="medida.suprailiaca" type="text" id="suprailiaca" />
+			<label for="abdominal">Abdominal</label>
+			<input ng-model="medida.abdominal" type="text" id="abdominal" />
+			<button ng-click="add(medida)">add</button>
+		</div>
+		
+		<div>
+			<chart value="myChart" type="Line"></chart>
+		</div>
+
+		<div>
+			<chart value="myChartPie" type="Pie"></chart>
+		</div>
+
+	</body>
+</html>
