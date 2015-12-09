@@ -160,23 +160,23 @@ var controller = app.controller("medidasCtrl", function($scope) {
 	    datasets: [
 	        {
 	            label: "My First dataset",
-	            fillColor: "rgba(220,220,220,0.2)",
-	            strokeColor: "rgba(220,220,220,1)",
-	            pointColor: "rgba(220,220,220,1)",
-	            pointStrokeColor: "#fff",
-	            pointHighlightFill: "#fff",
-	            pointHighlightStroke: "rgba(220,220,220,1)",
+	            fillColor : "rgba(99,123,133,0.4)",
+				strokeColor : "rgba(220,220,220,1)",
+				pointColor : "rgba(220,220,220,1)",
+				pointStrokeColor : "#667",
+				pointHighlightFill: "#000",
+	            pointHighlightStroke: "rgba(100,100,100,1)",
 	            data: [100,95,90,87,85,83,80,75] //peso
 	        },
 	        {
 	            label: "My Second dataset",
-	            fillColor: "rgba(151,187,205,0.2)",
+	            fillColor: "rgba(25,118,210,0.7)",
 	            strokeColor: "rgba(151,187,205,1)",
 	            pointColor: "rgba(151,187,205,1)",
-	            pointStrokeColor: "#fff",
-	            pointHighlightFill: "#fff",
-	            pointHighlightStroke: "rgba(151,187,205,1)",
-	            data: []
+	            pointStrokeColor: "#00F",
+	            pointHighlightFill: "#000",
+	            pointHighlightStroke: "rgba(100,100,100,1)",
+	            data: [95,90,100,98,70,85,75]
 	        }
 	    ]
 	};
